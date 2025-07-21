@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte principal elegante */
+    background-color: pink; /* Fundo rosa claro para dar clima romântico */
+    color: rgb(199, 26, 83); /* Cor de texto padrão (rosa escuro) */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove preenchimentos padrão */
+    display: flex; /* Ativa o Flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os filhos em coluna (de cima para baixo) */
+    align-items: center; /* Centraliza os itens na horizontal */
+    justify-content: center; /* Centraliza os itens na vertical */
+    height: 100vh; /* Ocupa 100% da altura da janela do navegador */
+    overflow: hidden; /* Impede que conteúdos que saem da tela apareçam */
+}
+
+h2 {
+    color: rgb(220, 118, 135); /* Cor especial para o subtítulo (mais clara que o texto comum) */
+}
+
+.caixinha {
+    background-color: white; /* Fundo branco para destacar o conteúdo */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra leve para dar profundidade */
+    width: 380px; /* Largura da caixa */
+    margin: 20px; /* Espaço externo */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+    position: relative; /* Permite posicionamento absoluto dos filhos, se necessário */
+    z-index: 1; /* Coloca a caixa acima de outros elementos de menor prioridade */
+}
+
+.botoes {
+    display: flex; /* Organiza os botões lado a lado */
+    justify-content: center; /* Centraliza os botões na horizontal */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima do grupo de botões */
+    position: relative; /* Permite que os botões se comportem bem mesmo com movimentação */
+    z-index: 2; /* Coloca os botões acima da caixinha (caso se movam) */
+}
+
+.buttons {
+    font-size: 1rem; /* Tamanho do texto nos botões */
+    font-family: 'Poppins', sans-serif; /* Fonte igual ao restante da página */
+    background-color: rgb(199, 26, 83); /* Cor do botão (rosa escuro) */
+    color: white; /* Texto branco para contraste */
+    padding: 12px 15px; /* Espaçamento interno */
+    border: 2px solid pink; /* Borda sólida rosa */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra leve ao redor */
+    cursor: pointer; /* Muda o cursor para "mão" ao passar por cima */
+    transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease; /* Transições suaves ao mover ou aplicar transformações */
+}
+
+.buttons:hover {
+    transform: scale(1.15); /* Aumenta o botão levemente ao passar o mouse */
+}
+
+.btn-secret {
+    font-family: 'Poppins', sans-serif; /* Fonte igual ao restante */
+    position: fixed; /* Fixa o botão no canto da tela */
+    right: 20px; /* Distância da borda direita */
+    bottom: 20px; /* Distância da borda inferior */
+    margin-top: 30px; /* Espaço acima (pouco usado por estar fixo) */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: white; /* Fundo branco */
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15); /* Sombra destacando o botão */
+    color: rgb(199, 26, 83); /* Cor do texto */
+    border: 2px dashed rgb(199, 26, 83); /* Borda tracejada */
+    border-radius: 12px; /* Borda arredondada */
+    cursor: pointer; /* Cursor "mão" ao passar o mouse */
+    opacity: 0.3; /* Inicialmente transparente */
+    transition: opacity 0.5s ease, transform 0.3s ease; /* Transições suaves ao interagir */
+}
+
+.btn-secret:hover {
+    opacity: 1; /* Totalmente visível ao passar o mouse */
+    transform: scale(1.15); /* Levemente aumentado */
+}
+
+.btn-music {
+    position: fixed; /* Fixa no canto superior direito */
+    right: 20px;
+    top: 20px;
+    background-color: rgb(243, 212, 212); /* Cor de fundo suave */
+    border-radius: 12px; /* Borda arredondada */
+    width: 50px;
+    height: 30px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    cursor: pointer; /* Cursor "mãozinha" */
+    align-items: center; /* Alinha conteúdo no centro vertical */
+    justify-content: center; /* Alinha conteúdo no centro horizontal */
+    display: flex; /* Flexbox ativo para centralização */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao interagir */
+}
+
+.btn-music:hover {
+    transform: scale(1.1); /* Aumenta ao passar o mouse */
+}

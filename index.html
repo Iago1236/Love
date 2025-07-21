@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Annelise, você quer namorar comigo? 💝</title>
+</head>
+<body>
+  <!-- Música -->
+  <div class="btn-music" onclick="toggleMusic()" id="musicBtn" title="Tocar/Pausar música">
+    🎵
+    <audio id="bg-music" loop preload="auto">
+      <source src="audio/Mac-Miller-Congratulations.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- Caixinha com pergunta e botões -->
+  <div class="caixinha">
+    <h1>Annelise, eu te amo 💓</h1>
+    <h2>Mas... você gosta de mim?</h2>
+
+    <div class="botoes">
+      <button class="buttons" onclick="moveButton(this)" id="yesBtn1" title="Clique se sim">Sim</button>
+      <button class="buttons" onclick="moveButton(this)" id="noBtn1" title="Clique se não">Não</button>
+    </div>
+  </div>
+
+  <!-- Botão secreto -->
+  <button class="btn-secret" onclick="showNextQuestion(2)" id="secretAnswerBtn" title="Surpresa!">
+    Eu não gosto de você, EU TEAMO 💓
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
