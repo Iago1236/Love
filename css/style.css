@@ -96,3 +96,67 @@ h2 {
 .btn-music:hover {
     transform: scale(1.1); /* Aumenta ao passar o mouse */
 }
+
+.resposta-amor {
+    margin-top: 20px;
+    text-align: center;
+}
+input[type="range"] {
+    width: 100%;
+    accent-color: pink;
+    height: 12px;
+    border-radius: 10px;
+}
+
+.resposta-amor input[type="range"] {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    accent-color: #ff69b4;
+}
+
+.resposta-amor p {
+    font-size: 18px;
+    color: #ff5c8a;
+    font-weight: bold;
+}
+
+.emoji-amor {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.resposta-amor .buttons {
+    padding: 10px 25px;
+    background-color: #ff5c8a;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.resposta-amor .buttons:hover {
+    background-color: #ff2f6d;
+}
+
+.floating-emoji {
+  position: fixed;
+  bottom: 0;
+  font-size: 24px;
+  animation: floatUp 4s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px) scale(1.5);
+    opacity: 0;
+  }
+}
